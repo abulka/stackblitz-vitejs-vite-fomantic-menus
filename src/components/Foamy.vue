@@ -33,9 +33,8 @@ function foamClick(e) {
 </script>
 
 <template>
-  <h2>Foamy Component</h2>
-
-  <div class="ui container">
+  <b>Foamy Component</b>
+  <div class="ui raised segment">
     <div class="ui three foaminess item menu" @click="foamClick($event)">
       <a class="item">AAA</a>
       <a class="item">BBB</a>

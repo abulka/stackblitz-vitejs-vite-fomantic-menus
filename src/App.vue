@@ -22,6 +22,15 @@ import { RouterLink, RouterView, useLink } from 'vue-router'
       <router-link to="/foamy">Go to Foamy</router-link>
   </div>
 
+  <h2>Same router menu, except as fomantic menu</h2>
+  <div class="ui container">
+    <div class="ui three item menu">
+      <a class="item"><router-link to="/">Home</router-link></a>
+      <a class="item"><router-link to="/about">About</router-link></a>
+      <a class="item"><router-link to="/foamy">Foamy</router-link></a>
+    </div>
+  </div>
+
   <!-- route outlet -->
   <!-- component matched by the route will render here -->
   <router-view></router-view>
