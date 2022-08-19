@@ -33,12 +33,22 @@ function foamClick(e) {
 </script>
 
 <template>
-  <b>Foamy Component</b>
-  <div class="ui raised segment">
-    <div class="ui three foaminess item menu" @click="foamClick($event)">
-      <a class="item">AAA</a>
-      <a class="item">BBB</a>
-      <a class="item">CCC</a>
+  <div class="standout">
+    <b>Foamy Component</b>
+    <div class="ui raised segment">
+      <div class="ui three foaminess item menu" @click="foamClick($event)">
+        <a class="item">AAA</a>
+        <a class="item">BBB</a>
+        <a class="item">CCC</a>
+      </div>
+    </div>
+    <b>Foamy Component without js</b>
+    <div class="ui raised segment">
+      <div class="ui three foaminess item menu">
+        <a class="item">AAA2</a>
+        <a class="item">BBB2</a>
+        <a class="item">CCC2</a>
+      </div>
     </div>
   </div>
 
@@ -48,6 +58,9 @@ function foamClick(e) {
 
 .foaminess {
   /* background-color: green; */
+}
+.standout {
+  background-color: cyan;
 }
 
 </style>
