@@ -26,6 +26,8 @@ import { RouterLink, RouterView, useLink } from 'vue-router';
       <b>Probably the click event bubbles up</b> - thus the router responds to the link click, and then fomantic responds to the bubbled up
       click. And if you click on the fomantic outer menu item, then its just fomantic responding - but why does it add `active` without
       explicit js?
+      <b>because</b>the jquery wiring of the helloworld component hangs around even though we have switched router pages, I think because the app.vue component is permanently there. THUS mixing jquery, fomantic and vue and vue routes is a REALLY tangled web of incompatible
+      active classes, events, mounted lifecycles - yikes!
     </p>
     <div class="ui container">
       <div class="ui three item menu">

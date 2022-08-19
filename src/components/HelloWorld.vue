@@ -21,6 +21,7 @@ onMounted(() => {
 
   // https://stackoverflow.com/questions/33041509/menu-not-working-for-semantic-ui-like-example-code 
   $('.ui.three .item').on('click', function () {
+    console.log('click on menu item in helloworld')
     $('.ui .item').removeClass('active');
     $(this).addClass('active');
   });
