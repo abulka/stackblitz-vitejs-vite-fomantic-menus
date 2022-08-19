@@ -9,6 +9,6 @@ But now we need to look at the automatic vue router active class (which is actua
 Clues: https://stackoverflow.com/questions/46083220/how-to-vuejs-router-link-active-style <--- GREAT DOCO
 `vue-router` automatically applies two active classes, `.router-link-active` and `.router-link-exact-active`, to the `<router-link>` component.
 
-Probable solution: To change the class being applied, use the configuration e.g. `linkActiveClass: "active",` so that the fomantic compatible `active` class gets added instead of the default `router-link-exact-active` class which means nothing to fomantic.
+Probable solution: To change the class being applied, use the configuration e.g. `linkActiveClass: "active",` so that the fomantic compatible `active` class gets added instead of the default `router-link-exact-active` class which means nothing to fomantic. XX
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-ngkqgb)
