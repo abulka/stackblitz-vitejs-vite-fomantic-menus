@@ -1,9 +1,12 @@
 <script setup>
 import { computed } from 'vue'
 import { ref, onMounted, onUnmounted } from "vue";
+import { globals } from "../globals"
+
+const lastState = ref() // seems this gets lost when unmounted due to router navigation!
 
 onMounted(() => {
-  console.log('Foamy onMounted!');
+  console.log('Foamy onMounted!', globals, lastState.value, globals.lastState);
 
   // https://stackoverflow.com/questions/33041509/menu-not-working-for-semantic-ui-like-example-code 
   // $('.ui .item').on('click', function () {
@@ -22,6 +25,9 @@ function foamClick(e) {
     siblings[i].classList.remove('active')
   }
   e.target.classList.add('active')
+  lastState.value = e.target
+  globals.lastState = e.target.text
+  console.log('set globals.lastState to', globals.lastState)
 }
 
 </script>
